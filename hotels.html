@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Отели</title>
+</head>
+<body>
+    <header class="main-header">
+        <nav class="main-navigation">
+            <a class="main-navigation-logo">
+                <img src="#" alt="LogoSedona">
+            </a>
+            <ul class="site-navigation">
+                <li><a href="#">Информация</a></li>
+                <li><a href="#">Фото и видео</a></li>
+                <li><a href="#">Карта Штата</a></li>
+                <li><a href="#">Гостиницы</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section>
+        <form action="/echo" method="post">
+            <div>
+                <h2>Инфраструктура:</h2>
+                    <label>
+                        <input type="checkbox" name="swim" value="a1" checked>
+                        <span>Бассейн</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="parking" value="a2" >
+                        <span>Парковка</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="wi-fi" value="a3" checked>
+                        <span>Wi-FI</span>
+                    </label>
+            </div>
+            <div>
+                <h2>Тип Жилья:</h2>
+                    <label>
+                        <input type="checkbox" name="hotel" value="a1" checked>
+                        <span>Гостиница</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="motel" value="a2" checked>
+                        <span>Мотель</span>
+                    </label>
+                    <label>
+                        <input type="checkbox" name="apartments" value="a3" checked>
+                        <span>Апартаменты</span>
+                    </label>
+            </div>
+            <div>
+                <h2>Стоимость в сутки(Р)</h2>
+                    <span>от 1 до 3000</span>
+                    <p><input type="range" min="1" max="3000"></p>
+            </div>
+            <div>
+                <p><input type="submit" value="Показать"
+                formaction="#" formmethod="post"></p>
+            </div>
+        </form>
+    </section>
+    <article>
+        <h2>Найдено 3:</h2>
+        <span>Сортировка:</span>
+        <ul>
+            <li><a href="#">по цене</a></li>
+            <li><a href="#">по типу</a></li>
+            <li><a href="#">по рейтингу</a></li>
+        </ul>
+        <a href="#">Треугольник1</a>
+        <a href="#">Треугольник 2</a>
+    </article>
+    <section>
+        <article>
+            <div>
+                <img src="#" alt="img1">
+            </div>
+                <h2>Amara Resort &amp; Spa</h2>
+                <span>Гостиница</span>
+                <span>От 4000 Р.</span>
+                <a href="#">подробнее</a>
+                <a href="#">забронировать</a>
+                <img src="#" alt="stars">
+                <div><p>Рейтинг: 8,5</p></div>
+        </article>
+        <article>
+            <div>
+                <img src="#" alt="img2">
+            </div>
+                <h2>Desert quail inn</h2>
+                <span>Мотель</span>
+                <span>От 3000 Р.</span>
+                <a href="#">подробнее</a>
+                <a href="#">забронировать</a>
+                <img src="#" alt="stars">
+                <div><p>Рейтинг: 8,9</p></div>
+        </article>
+        <article>
+            <div>
+                <img src="#" alt="img3">
+            </div>
+                <h2>Vilas at poco diablo</h2>
+                <span>Апартаменты</span>
+                <span>От 2000 Р.</span>
+                <a href="#">подробнее</a>
+                <a href="#">забронировать</a>
+                <img src="#" alt="stars">
+                <div><p>Рейтинг: 9,2</p></div>
+        </article>
+    </section>
+    <footer>
+        <div class="visitsedona-footer-link">
+        <a href="#">#visitsedona</a>
+        </div>
+        <div class="social-links">
+            <ul class="social-links-list">
+                <li><a href="#twitter">twitter</a></li>
+                <li><a href="#facebook">facebook</a></li>
+                <li><a href="#youtube">youtube</a></li>
+            </ul>
+        </div>
+        <a href="#" class="developer-text">Разработано</a>
+    </footer>
+</body>
+</html>
