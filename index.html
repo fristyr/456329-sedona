@@ -15,29 +15,29 @@
                     <li><a href="#">Информация</a></li>
                     <li><a href="#">Фото и видео</a></li>
                     <li><a href="#">Карта Штата</a></li>
-                    <li><a href="#">Гостиницы</a></li>
+                    <li><a href="hotels.html">Гостиницы</a></li>
                 </ul>
             </nav>
         </header>
         <main class="container">
-            <div class="main-big-wrap">
+            <div class="promo-block">
                 <img src="img/intro.jpg" alt="main-header-img">
             </div>
-            <section class="">
+            <section class="features-title">
                 <p>Седона - небольшой город в Аризоне,
                 заслуживающий большего</p>
                 <p>Рассмотрим 5 причин,по которым седона круче
                 чем гранд каньён</p>
             </section>
         <section>
-            <div class="container-blue-one">
-                <div>
+            <div class="blue-couse-wrapper couse-wrapper">
+                <div class="couse">
                     <h2>Настоящий городок</h2>
                     <span>– №1 –</span>
                     <p>Седона не аттракцион для туристов,
                         там течет своя жизнь</p>
                 </div>
-                <div class="img-one">
+                <div class="couse-image">
                     <img src="img/city-image.jpg" alt="city-image">
                 </div>
             </div>
@@ -58,35 +58,35 @@
                     но и местного производства!</p>
                 </div>
             </section>
-            <div class="container-blue-two">
-                <div>
+            <div class="blue-couse-wrapper couse-wrapper">
+                <div class="couse">
                     <h2>Там есть<br>мост дьявола</h2>
                     <span>– №2 –</span>
                     <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                 </div>
-                    <div class="img-two">
+                    <div class="couse-image">
                         <img src="img/canyon-image.jpg" alt="canyon-image">
                     </div>
             </div>
-            <section class="asside-two">
-                <div>
+            <section class="couse-wrapper">
+                <div class="couse">
                     <h2>Небольшая Площадь</h2>
                     <span>– №3 –</span>
                     <p>Все достопримеча тельности находятся очень близко</p>
                 </div>
-                <div>
+                <div class="couse">
                     <h2>Красивая Дорога</h2>
                     <span>– №4 –</span>
                     <p>Ехать в седону из лас-вегаса совсем не скучно</p>
                 </div>
-                <div>
+                <div class="couse">
                     <h2>Мало Туристов</h2>
                     <span>– №5 –</span>
                     <p>Больгинство едет в гранд каньён и толпятся там</p>
                 </div>
             </section>
         </section>
-        <section class="footer-text">
+        <section class="interest">
             <div>
                 <p>Заинтересовались?</p>
                 <p>Укажите предполагаемые даты поездки,<br>
@@ -97,24 +97,28 @@
         <form action="https://echo.htmlacademy.ru" method="get">
                 <label>
                     <span>Дата заезда</span>
-                    <input type="text" value="24 апреля 2016">
+                    <input type="text" name="date-come" value="24 апреля 2016">
                 </label>
-                    <button type="button" class="icon-map-form">calendar</button>
+                    <button type="button" class="icon-map-form">
+                        <span class="visually-hidden">calendar</span>
+                    </button>
                 <label>
                     <span>Дата выезда</span>
-                    <input type="text" value="07 июля 2016">
+                    <input type="text" name="data-out" value="07 июля 2016">
                 </label>
-                    <button type="button" class="icon-map-form">calendar</button>
+                    <button type="button" class="icon-map-form">
+                        <span class="visually-hidden">calendar</span>
+                    </button>
                 <label>
                     <span>Взрослые</span>
                     <button type="button" class="mature-minus-form">-</button>
-                    <input type="text" value="2">
+                    <input type="text" name="adult" value="2">
                     <button type="button" class="mature-plus-form">+</button>
                 </label>
                 <label>
                     <span>Дети</span>
                     <button type="button" class="kids-minus-form">-</button>
-                    <input type="text" value="0">
+                    <input type="text" name="kids" value="0">
                     <button type="button" class="mature-plus-form">+</button>
                 </label>
                 <div>
@@ -133,23 +137,23 @@
                 <ul class="social-links-list">
                     <li>
                         <a href="#twitter">
-                        <span class="vissualy-hiden">twitter</span>
+                        <span class="visually-hidden">twitter</span>
                         </a>
                     </li>
                     <li>
                         <a href="#facebook">
-                        <span class="vissualy-hiden">facebook</span>
+                        <span class="visually-hidden">facebook</span>
                         </a>
                     </li>
                     <li>
                         <a href="#youtube">
-                        <span class="vissualy-hiden">youtube<span>
+                        <span class="visually-hidden">youtube<span>
                         </a>
                     </li>
                 </ul>
             </div>
-            <a href="#" class="developer-text">Разработано 
-                <span class="vissualy-hiden">HTML Academy</span>
+            <a href="#" class="developer-text">Разработано
+                <span class="visually-hidden">HTML Academy</span>
             </a>
         </footer>
   </body>

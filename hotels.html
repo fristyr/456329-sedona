@@ -7,7 +7,7 @@
 <body>
     <header class="main-header">
         <nav class="main-navigation">
-            <a class="main-navigation-logo">
+            <a href="index.html" class="main-navigation-logo">
                 <img src="img/logo-sedona.png" width="100" height="50"
                  alt="LogoSedona">
             </a>
@@ -15,7 +15,7 @@
                 <li><a href="#">Информация</a></li>
                 <li><a href="#">Фото и видео</a></li>
                 <li><a href="#">Карта Штата</a></li>
-                <li><a href="#">Гостиницы</a></li>
+                <li><a >Гостиницы</a></li>
             </ul>
         </nav>
     </header>
@@ -72,11 +72,11 @@
         </ul>
         <!--Ссылка для сортировки вверх-->
         <a href="#">
-            <span class="vissualy-hiden"> </span>
+            <span class="visually-hidden">Сортировка вверх</span>
         </a>
         <!--Ссылка для сортировки вниз-->
         <a href="#">
-            <span class="vissualy-hiden"> </span>
+            <span class="visually-hidden">Сортировка вниз</span>
         </a>
     </div>
     <section>
@@ -89,7 +89,9 @@
                 <a href="#">подробнее</a>
                 <a href="#">забронировать</a>
             </div>
-                <img src="#" alt="stars">
+                <span class="stars">
+                    <span class="visually-hidden">4 звезды</span>
+                </span>
                 <div><p>Рейтинг: 8,5</p></div>
         </article>
         <article>
@@ -101,7 +103,9 @@
                 <a href="#">подробнее</a>
                 <a href="#">забронировать</a>
             </div>
-                <img src="#" alt="stars">
+            <span class="stars">
+                <span class="visually-hidden">3 звезды</span>
+            </span>
                 <div><p>Рейтинг: 8,9</p></div>
         </article>
         <article>
@@ -113,22 +117,38 @@
                 <a href="#">подробнее</a>
                 <a href="#">забронировать</a>
             </div>
-                <img src="#" alt="stars">
+            <span class="stars">
+                <span class="visually-hidden">2 звезды</span>
+            </span>
                 <div><p>Рейтинг: 9,2</p></div>
         </article>
     </section>
     <footer>
         <div class="visitsedona-footer-link">
-        <a href="#">#visitsedona</a>
+            <a href="#">#visitsedona</a>
         </div>
         <div class="social-links">
             <ul class="social-links-list">
-                <li><a href="#twitter">twitter</a></li>
-                <li><a href="#facebook">facebook</a></li>
-                <li><a href="#youtube">youtube</a></li>
+                <li>
+                    <a href="#twitter">
+                    <span class="visually-hidden">twitter</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#facebook">
+                    <span class="visually-hidden">facebook</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#youtube">
+                    <span class="visually-hidden">youtube<span>
+                    </a>
+                </li>
             </ul>
         </div>
-        <a href="#" class="developer-text">Разработано</a>
+        <a href="#" class="developer-text">Разработано
+            <span class="visually-hidden">HTML Academy</span>
+        </a>
     </footer>
 </body>
 </html>
