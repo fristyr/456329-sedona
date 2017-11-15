@@ -132,3 +132,62 @@ a {
     font-size: 21px;
     font-weight: 26px;
 }
+
+
+/* Hotels style */
+
+.chose-housing {
+    background-image: url(../img/inner-form-img.jpg);
+    background-repeat: no-repeat;
+}
+
+.chose-housing label{
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: #ffffff;
+
+}
+
+.chose-housing input{
+    font-family: "PT Sans", "Arial", sans-serif;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 21px;
+
+}
+
+.chose-housing h2 {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.white-span {
+    color: #ffffff;
+}
+
+.find-results {
+    background-color: #ffffff;
+    font-size: 12px;
+    font-weight: 18px;
+}
+
+.find-results li{
+    list-style: none;
+    display: inline;
+}
+
+.find-results ul {
+    margin: 0;
+    padding: 0;
+}
+
+.sort-text-style {
+    color: #000000;
+}
+
+.sort-price-style {
+    color: #81b3d2;
+}
+
+.type-rating-style {
+	   border-bottom: 1px dashed #81b3d2;
+}

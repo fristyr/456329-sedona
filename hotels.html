@@ -13,7 +13,7 @@
     <header class="main-header">
         <nav class="main-navigation">
             <a href="index.html" class="main-navigation-logo">
-                <img src="img/logo-sedona.png" width="100" height="50"
+                <img src="img/logo-sedona.png" width="138" height="70"
                  alt="LogoSedona">
             </a>
             <ul class="site-navigation">
@@ -25,7 +25,7 @@
         </nav>
     </header>
     <section>
-        <form action="https://echo.htmlacademy.ru" method="get">
+        <form action="https://echo.htmlacademy.ru" method="get" class="chose-housing">
             <div>
                 <h2>Инфраструктура:</h2>
                     <label>
@@ -57,9 +57,9 @@
                         <span>Апартаменты</span>
                     </label>
             </div>
-            <div>
+            <div class="price-in-day">
                 <h2>Стоимость в сутки(Р)</h2>
-                    <span>от 1 до 3000</span>
+                    <span class="white-span">от 1 до 3000</span>
                     <input type="range" min="1" max="3000">
             </div>
             <div>
@@ -67,20 +67,20 @@
             </div>
         </form>
     </section>
-    <div>
+    <div class="find-results">
         <h2>Найдено 3:</h2>
-        <span>Сортировка:</span>
+        <span class="sort-text-style">Сортировка:</span>
         <ul>
-            <li><a href="#">по цене</a></li>
-            <li><a href="#">по типу</a></li>
-            <li><a href="#">по рейтингу</a></li>
+            <li><a href="#" class="sort-price-style">по цене</a></li>
+            <li><a href="#" class="type-rating-style">по типу</a></li>
+            <li><a href="#" class="type-rating-style">по рейтингу</a></li>
         </ul>
         <!--Ссылка для сортировки вверх-->
-        <a href="#">
+        <a class="arrow arrow-up" href="#">
             <span class="visually-hidden">Сортировка вверх</span>
         </a>
         <!--Ссылка для сортировки вниз-->
-        <a href="#">
+        <a class="arrow arrow-down" href="#">
             <span class="visually-hidden">Сортировка вниз</span>
         </a>
     </div>
