@@ -58,6 +58,7 @@ a {
 
 .blue-couse-wrapper {
     background-color: #81b3d2;
+    color: #ffffff;
 }
 
 .features-title {
@@ -180,14 +181,12 @@ a {
     padding: 0;
 }
 
-.sort-text-style {
-    color: #000000;
-}
-
-.sort-price-style {
-    color: #81b3d2;
-}
-
 .type-rating-style {
-	   border-bottom: 1px dashed #81b3d2;
+    color: #cacaca;
+    border-bottom: 1px dashed #81b3d2;
+}
+
+.type-rating-style.active-sort {
+    text-decoration: none;
+    color: #81b3d2;
 }
