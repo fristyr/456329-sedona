@@ -185,9 +185,11 @@ a {
 }
 
 .visitsedona-footer-link a{
+    color: #000;
     font-size: 21px;
-    font-weight: 26px;
-    color: #333333;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
 }
 
 .social-links-list a{
@@ -199,6 +201,12 @@ a {
 }
 
 /* Hotels style */
+
+.infrastructure-housetype-price {
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 21px;
+}
 
 .chose-housing {
     background-image: url(../img/inner-form-img.jpg);
