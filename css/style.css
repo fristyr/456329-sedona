@@ -39,7 +39,7 @@ a {
     background-color: #FFFFFF
 }
 
-nav {
+.main-navigation {
     position: relative;
 }
 
@@ -51,6 +51,7 @@ nav {
 }
 
 .site-navigation {
+    margin: 0;
     display: flex;
     justify-content: space-around;
     list-style: none;
@@ -87,6 +88,7 @@ nav {
 }
 
 .couse-wrapper {
+    display: flex;
 }
 
 .wrapper-gray {
@@ -94,7 +96,6 @@ nav {
 }
 
 .couse-gray {
-    display: flex;
     justify-content: space-around;
     align-items: stretch;
 }
@@ -122,8 +123,6 @@ nav {
 }
 
 .couse {
-    display: flex;
-    flex-direction: column;
     width: 400px;
     min-height: 250px;
     text-align: center;
@@ -134,26 +133,20 @@ nav {
 }
 
 .features {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
     min-height: 330px;
-    background-color: #ffffff;
-}
-
-.features,
-.features.item {
     text-align: center;
     font-weight: 400;
     text-transform: uppercase;
     color: #000000;
+    background-color: #ffffff;
 }
 
+.features-item  {
+    width: 400px;
+}
 
 .interest {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    padding-top: 57px;
     min-height: 290px;
     background-color: #FFFFFF;
     text-align: center;
@@ -195,16 +188,11 @@ nav {
 }
 
 .hotel-search {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     width: 570px;
     min-height: 400px;
     background-color: #ffffff;
     font-size: 14px;
     line-height: 26px;
-
 }
 
 .hotel-search label {
@@ -255,18 +243,19 @@ nav {
 
 /*Footer start*/
 
-.social-links-list {
+footer {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-links-list {
 }
 
 .social-links-list li{
     list-style: none;
-    flex-direction: column;
-    justify-content: center;
     align-items: baseline;
 }
-
-
 
 .visitsedona-footer-link a{
     color: #000;
@@ -285,7 +274,8 @@ nav {
 }
 
 /*Footer end*/
-
+/*+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 /* Hotels style */
 
 .infrastructure-housetype-price {
@@ -297,6 +287,7 @@ nav {
 .chose-housing {
     background-image: url(../img/inner-form-img.jpg);
     background-repeat: no-repeat;
+
 }
 
 .chose-housing label{
