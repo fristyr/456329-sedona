@@ -26,39 +26,19 @@ a {
     text-decoration: none;
 }
 
-.main-header {
-
-
-}
-
 .main-navigation {
-    display: flex;
-    flex-direction: column;
-    width: 1200px;
-    height: 55px;
-    margin-left: 75px;
     color: #000000;
-    background-color: #FFFFFF;
-}
-
-.main-navigation-logo {
-    display: flex;
-    justify-content: center;
+    background-color: #FFFFFF
 }
 
 .site-navigation {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
     list-style: none;
-
 
 }
 
 .site-navigation li{
+    display:inline-block;
     font-weight: bold;
-
 }
 
 .main-navigation a,
@@ -76,56 +56,12 @@ a {
     color: #81b3d2;
 }
 
-.promo-block {
-    display: flex;
-    justify-content: center;
-}
-
 .blue-couse-wrapper {
-    display: flex;
-    margin-left: 75px;
-    color: #ffffff;
-
-}
-
-.couse-wrapper-gray {
-    display: flex;
-    background-color: #eeeeee;
-}
-
-.couse-image {
-    display: flex;
-    height: 250px;
-
-}
-
-.couse {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: 250px;
-    margin-left: 75px;
-    text-align: center;
-
-}
-
-.couse-box-blue {
-    display: flex;
-    flex-direction: column;
-    width: 400px;
-    height: 250px;
-    text-align: center;
     background-color: #81b3d2;
+    color: #ffffff;
 }
 
 .features-title {
-    display: flex;
-    flex-direction: column;
-    width: 1200px;
-    height: 210px;
-    margin-left: 75px;
-    padding-top: 60px;
-    padding-bottom: 60px;
     background-color: #FFFFFF;
     text-align: center;
     font-size: 14px;
@@ -138,12 +74,8 @@ a {
     line-height: 26px;
 }
 
-.features {
-    display: flex;
-    justify-content: space-around;
-    width: 1200px;
-    height: 330px;
-    margin-left: 75px;
+.couse {
+    text-align: center;
 }
 
 .features,
@@ -152,7 +84,6 @@ a {
     font-weight: 400;
     text-transform: uppercase;
     color: #000000;
-    background-color: #ffffff;
 }
 
 
@@ -170,6 +101,7 @@ a {
 }
 
 .search-hotel-button {
+    display: block;
     position: relative;
     box-sizing: border-box;
     z-index: 1;
@@ -221,6 +153,7 @@ a {
 .button-index-form {
     border: none;
     outline: none;
+    display: block;
     position: relative;
     box-sizing: border-box;
     z-index: 1;
@@ -248,7 +181,7 @@ a {
 
 .social-links-list li{
     list-style: none;
-
+    display: inline-block;
 }
 
 .visitsedona-footer-link a{
@@ -311,7 +244,7 @@ a {
 
 .find-results li{
     list-style: none;
-
+    display: inline;
 }
 
 .find-results ul {
