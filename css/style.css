@@ -247,6 +247,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    background-color: #ffffff;
 }
 
 .social-links-list {
@@ -326,6 +327,19 @@ footer {
 .find-results ul {
     margin: 0;
     padding: 0;
+}
+
+.results-items {
+    display: flex;
+    justify-content: space-around;
+    align-items:  flex-start;
+    min-height: 150px;
+    border-top: 1px solid #cacaca;
+    background-color: #ffffff;
+}
+
+.last-result {
+    border-bottom: 1px solid #cacaca;
 }
 
 .type-rating-style {
