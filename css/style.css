@@ -47,18 +47,60 @@ a {
     display: block;
     position: absolute;
     top: 0;
-    left: 533px;
+    left: 531px;
 }
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 
 .site-navigation {
     margin: 0;
     display: flex;
-    justify-content: space-around;
     list-style: none;
+    padding-left: 70px;
 }
 
 .site-navigation li{
     font-weight: bold;
+}
+
+.main-navigation{
+    padding-top: 15px;
+}
+
+.site-navigation a{
+    display: block;
+}
+
+.nav-one {
+    padding-left: 145px;
+    text-align: left;
+}
+
+.nav-two {
+    padding-left: 390px;
+    text-align: right;
+}
+
+.nav-three {
+    padding-left: 168px;
+    text-align: right;
 }
 
 .main-navigation a,
@@ -104,10 +146,12 @@ a {
 }
 
 .features-title {
+    padding-top: 10px;
     display: flex;
     flex-direction: column;
-    min-height: 220px;
-    padding-top: 60px;
+    align-items: center;
+    min-height: 225px;
+    padding-top: 32px;
     padding-bottom: 60px;
     background-color: #FFFFFF;
     text-align: center;
@@ -119,6 +163,7 @@ a {
     font-weight: bold;
     font-size: 21px;
     line-height: 26px;
+    padding-bottom: 20px;
 }
 
 .couse {
@@ -188,6 +233,11 @@ a {
     background-color: #ffffff;
     font-size: 14px;
     line-height: 26px;
+}
+
+.hotel-search input[type="text"]:hover,
+.hotel-search input[type="number"]:hover {
+  background-color: #ebebeb;
 }
 
 .hotel-search label {
