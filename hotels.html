@@ -11,20 +11,20 @@
 </head>
 <body>
     <div class="container">
-    <header class="main-header">
-        <nav class="main-navigation">
-            <a href="index.html" class="main-navigation-logo">
-                <img src="img/logo-sedona.png" width="138" height="70"
-                 alt="LogoSedona">
-            </a>
-            <ul class="site-navigation">
-                <li><a href="#">Информация</a></li>
-                <li><a href="#">Фото и видео</a></li>
-                <li><a href="#">Карта Штата</a></li>
-                <li><a >Гостиницы</a></li>
-            </ul>
-        </nav>
-    </header>
+        <header class="main-header">
+            <nav class="main-navigation">
+                <a class="main-navigation-logo">
+                    <img src="img/logo-sedona.png" width="138" height="70"
+                     alt="LogoSedona">
+                </a>
+                <ul class="site-navigation">
+                    <li class="nav-one"><a href="#">Информация</a></li>
+                    <li class="nav-two"><a href="#">Фото и видео</a></li>
+                    <li class="nav-three"><a href="#">Карта Штата</a></li>
+                    <li class="nav-four"><a href="hotels.html">Гостиницы</a></li>
+                </ul>
+            </nav>
+        </header>
     <section class="infrastructure-form">
         <form action="https://echo.htmlacademy.ru" method="get" class="chose-housing">
             <div class="infrastructure">
@@ -58,15 +58,21 @@
                         <span>Апартаменты</span>
                     </label>
             </div>
-            <div class="price-in-day">
-                <h2 class="infrastructure-housetype-price">Стоимость в сутки(Р)</h2>
-                    <span class="white-span">от 1 до 3000</span>
-                    <input type="range" min="1" max="3000">
+            <div class="filter-range">
+                <div class="filter-range-title">Стоимость в сутки (р):</div>
+                <div class="price-controls">
+                    <label class="min-price">от<input type="text" name="min-price" value="0"></label>
+                    <label class="max-price">до<input type="text" name="max-price" value="3000"></label>
+                </div>
+                <div class="range-controls">
+                    <div class="scale">
+                        <div class="bar"></div>
+                    </div>
+                    <div class="range-toggle range-toggle-min"></div>
+                    <div class="range-toggle range-toggle-max"></div>
+                </div>
+                <button class="btn-transparent" type="submit">Показать</button>
             </div>
-            <div>
-                <input type="submit" value="Показать">
-            </div>
-        </form>
     </section>
     <div class="find-results">
         <h2>Найдено 3:</h2>
