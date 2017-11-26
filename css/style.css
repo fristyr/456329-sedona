@@ -1,7 +1,8 @@
 *,
 *::before,
 *::after {
-  box-sizing: inherit;
+  box-sizing:  inherit;
+;
 }
 
 html {
@@ -86,7 +87,7 @@ input[type="radio"].visually-hidden {
 }
 
 .site-navigation a{
-    display: block;
+
 }
 
 .nav-one {
@@ -143,49 +144,18 @@ input[type="radio"].visually-hidden {
 }
 
 .wrapper-gray {
-    display: flex;
-    flex-direction: row;
-    align-items:  center;
-    justify-content: space-around;
     text-align: center;
     min-width: 400px;
-    min-height: 230px;
-    margin-bottom: 25px;
+    height: 255px;
 }
 
-.couse-gray-one {
-    width: 215px;
-    margin-top: 5px;
-    margin-left: 25px;
-    padding-top: 10px;
-    padding-bottom: 5px;
+.couse-gray  {
 }
-
-.couse-gray-two {
-    width: 276px;
-    margin-top: 5px;
-    padding-left: 10px;
-    padding-top: 10px;
-    padding-bottom: 5px;
-}
-
-.couse-gray-three {
-    width: 265px;
-    padding-top: 10px;
-}
-
-.nice-road,
-.min-turist {
-    display: flex;
-    width: 104px;
-    padding-left: 80px;
-}
-
 
 .couse-blue {
-    padding-top: 50px;
     background-color: #81b3d2;
 }
+
 
 .features-title {
     display: flex;
@@ -208,35 +178,24 @@ input[type="radio"].visually-hidden {
 }
 
 .couse {
-    display: block;
-    position: relative;
-    width: 400px;
+    min-width: 400px;
     min-height: 250px;
     text-align: center;
+    line-height: 21px;
+    padding-top: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
 
 }
 
-.text-wrapper-one {
-    position: absolute;
-    top: 30px;
-    min-height: 150px;
-    width: 280px;
-    margin-left: 60px;
-
+.couse h2 {
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 23px;
 }
 
-.text-wrapper-two {
-    position: absolute;
-    top: 30px;
-    min-height: 150px;
-    width: 310px;
-    margin-left: 50px;
-}
-
-.real-city {
-    display: flex;
-    width: 130px;
-    padding-left: 80px;
+.couse p {
+    margin-top: 20px;
 }
 
 .couse-image {
@@ -258,60 +217,69 @@ input[type="radio"].visually-hidden {
 }
 
 .features-item-one {
+    position: relative;
+    padding-top: 75px;
+    padding-left: 8px;
+    padding-right: 5px;
     min-height: 185px;
-    width: 275px;
-    margin-top: 138px;
-    padding-left: 10px;
-
+    width: 300px;
 }
 
-.house-pic {
+.features-item-one::before {
+    content: "";
     position: absolute;
-    top: 58px;
-    left: 148px;
-    height: 100px;
-    width: 100px;
+    top: -7px;
+    left: 112px;
+    width: 77px;
+    height: 77px;
     background-image: url(../img/house.svg);
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: 0 0;
 }
 
 .features-item-two {
+    position: relative;
+    padding-top: 75px;
+    padding-left: 8px;
+    padding-right: 5px;
     min-height: 185px;
     width: 300px;
-    margin-top: 135px;
 }
 
-.food-pic {
+.features-item-two::before {
+    content: "";
     position: absolute;
-    top: 58px;
-    left: 549px;
-    height: 100px;
-    width: 100px;
+    top: -7px;
+    left: 112px;
+    width: 77px;
+    height: 77px;
     background-image: url(../img/food.svg);
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: 0 0;
 }
 
 .features-item-three {
-    width: 275px;
-    margin-top: 75px;
-
+    position: relative;
+    padding-top: 75px;
+    padding-left: 8px;
+    padding-right: 5px;
+    min-height: 185px;
+    width: 300px;
 }
 
-.suvenirs-pic {
+.features-item-three::before {
+    content: "";
     position: absolute;
-    top: 55px;
-    right: 150px;
-    height: 100px;
-    width: 100px;
+    top: -12px;
+    left: 118px;
+    width: 77px;
+    height: 77px;
     background-image: url(../img/suvenirs.svg);
     background-repeat: no-repeat;
-    background-position: center top;
+    background-position: 0 0;
 }
 
 .interest {
-    position: relative;
     padding-top: 18px;
     min-height: 290px;
     background-color: #FFFFFF;
@@ -327,13 +295,15 @@ input[type="radio"].visually-hidden {
 }
 
 .search-hotel-button {
-    position: absolute;
     display: block;
     top: 205px;
     left: 317px;
     width: 566px;
-    height: 85px;
+    min-height: 87px;
     padding-top: 30px;
+    margin-top: 42px;
+    margin-right: auto;
+    margin-left: auto;
     font-size: 21px;
     text-transform: uppercase;
     border: none;
@@ -415,26 +385,24 @@ input[type="radio"].visually-hidden {
 
 footer {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     background-color: #ffffff;
     min-height: 120px;
 }
 
-.social-links-list {
-    position: relative;
-}
-/*
-.twitter {
-    background-image: url(../img/twitter.svg);
-    background-repeat: no-repeat;
-    width: 50px;
-    height: 50px;
-}
-*/
 .social-links-list li{
     list-style: none;
-    align-items: baseline;
+}
+
+.social-links-list {
+    padding-top: 25px;
+    padding-left: 125px;
+    padding-right: 125px;
+}
+
+.visitsedona-footer-link {
+    min-width: 400px;
+    text-align: center;
+    padding-top: 50px;
 }
 
 .visitsedona-footer-link a{
@@ -443,15 +411,54 @@ footer {
     font-weight: 700;
     text-align: center;
     text-decoration: none;
-    padding-left: 135px;
 }
 
-.social-links-list a{
-    color: #333333;
+.social-links ul{
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-width: 400px;
 }
+
+.social-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 47px;
+    height: 48px;
+    background-color: #81b3d2;
+}
+
 
 .developer-text {
+    display: block;
+    min-width: 400px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 26px;
+    padding-top: 40px;
+    padding-right: 4px;
+    padding-left: 6px;
     color: #333333;
+}
+
+.developer-text a {
+    
+}
+
+.developer-text svg{
+    min-width: 115px;
+    min-height: 40px;
+}
+
+.developer-text:focus path {
+    fill: #cacaca;
+}
+
+.developer-text:hover path {
+    fill: #81b3d2;
 }
 
 /*Footer end*/
@@ -462,9 +469,6 @@ footer {
 .infrastructure {
     display: flex;
     flex-direction: column;
-    margin-bottom: 55px;
-    
-
 }
 .infrastructure-housetype-price,
 .infrastructure-housetype-price {
@@ -595,7 +599,8 @@ footer {
     justify-content:  space-around;
     align-items: center;
     min-height: 215px;
-    padding-left: 70px;
+    padding-left:  72px;
+    padding-right: 72px;
     background-image: url(../img/inner-form-img.jpg);
     background-repeat: no-repeat;
 
@@ -625,7 +630,11 @@ footer {
 }
 
 .find-results {
+    display: flex;
+    justify-content:  space-around;
+
     background-color: #ffffff;
+    min-height: 87px;
     font-size: 12px;
     font-weight: 18px;
 }
@@ -635,15 +644,15 @@ footer {
 }
 
 .find-results ul {
-    margin: 0;
-    padding: 0;
+
 }
 
 .results-items {
-    display: flex;
-    justify-content: space-around;
-    align-items:  flex-start;
     min-height: 150px;
+    padding-top: 22px;
+    padding-bottom: 30px;
+    padding-left: 73px;
+    padding-right: 73px;
     border-top: 1px solid #cacaca;
     background-color: #ffffff;
 }
