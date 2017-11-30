@@ -99,13 +99,12 @@ input[type="radio"].visually-hidden {
 }
 
 .nav-three {
-    padding-left: 248px;
+    margin-left: auto;
     text-align: right;
 }
 
 .nav-four {
     width: 240px;
-    padding-left: 165px;
     text-align: right;
 }
 
@@ -167,7 +166,7 @@ input[type="radio"].visually-hidden {
 }
 
 .couse {
-    min-width: 400px;
+    width: 400px;
     min-height: 250px;
     text-align: center;
     line-height: 21px;
@@ -318,39 +317,18 @@ input[type="radio"].visually-hidden {
     background-color: #503e33;
     color: #cacaca;
 }
-
-.hotel-search {
-    width: 570px;
-    min-height: 400px;
+/*index-form-start*/
+.search-form {
     background-color: #ffffff;
-    font-size: 14px;
+    font-weight: bold;
+    font-size: 14;
     line-height: 26px;
-    border: 1px solid black;
+    height: 400px;
+    width: 566px;
+    margin-left: 317px;
 }
 
-.hotel-search input[type="text"]:hover,
-.hotel-search input[type="number"]:hover {
-  background-color: #ebebeb;
-}
-
-.hotel-search label {
-    font-family: "PT Sans", "Arial", sans-serif;
-    color: #000000;
-    font-weight: bold;
-}
-
-.hotel-search input {
-    font-family: "PT Sans", "Arial", sans-serif;
-    background-color: #f2f2f2;
-    color: #000000;
-    font-weight: bold;
-}
-
-.button-index-form {
-
-}
-
-.hotel-search input[type="submit"] {
+.search-form input[type="submit"] {
     width: 100%;
   height: 58px;
   font-size: 21px;
@@ -696,6 +674,14 @@ footer {
     padding-right: 8px;
 }
 
+.arrows:hover path {
+    fill: #000000;
+}
+
+.arrows:active path {
+    fill: #81b3d2;
+}
+
 .hotels {
     display: flex;
     height: 150px;
@@ -715,6 +701,7 @@ footer {
 }
 
 .hotel-description h2 {
+    display: inline-block;
     margin: 0;
     padding-bottom: 5px;
 }
@@ -722,7 +709,8 @@ footer {
 .hotel-description span{
     display: inline-block;
     margin-bottom: 15px;
-    margin-right: 35px;
+    margin-right: 5px;
+    min-width: 108px;
 }
 
 .hotel-description a {
@@ -741,8 +729,7 @@ footer {
 .rating p {
     background-color: #f2f2f2;
     margin-top: 34px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 19px;
 }
 
 .stars {
@@ -782,7 +769,16 @@ footer {
 .type-rating-style {
     color: #cacaca;
     margin-left: 33px;
-    border-bottom: 1px dashed #81b3d2;
+    border-bottom: 1px dotted #81b3d2;
+}
+
+.type-rating-style:hover {
+    color: #81b3d2;
+}
+
+.type-rating-style:active {
+    color: #000000;
+    border-bottom: none;
 }
 
 .type-rating-style.active-sort {
