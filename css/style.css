@@ -26,6 +26,8 @@ body {
 .container {
     width: 1200px;
     margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+
 }
 
 a {
@@ -95,7 +97,7 @@ input[type="radio"].visually-hidden {
 
 .nav-two {
     width: 240px;
-    margin-right: auto
+    margin-right: auto;
     text-align: left;
 }
 
@@ -269,6 +271,7 @@ input[type="radio"].visually-hidden {
 }
 
 .interest {
+    position: relative;
     padding-top: 18px;
     min-height: 290px;
     background-color: #FFFFFF;
@@ -320,9 +323,10 @@ input[type="radio"].visually-hidden {
 }
 /*index-form-start*/
 .search-form {
+    position: absolute;
     background-color: #ffffff;
     font-weight: bold;
-    font-size: 14;
+    font-size: 14px;
     line-height: 26px;
     height: 400px;
     width: 566px;
@@ -339,12 +343,27 @@ input[type="radio"].visually-hidden {
 .in-row {
     position: relative;
     margin-bottom: 30px;
-    margin-top: 2px;
+}
+
+.in-row:hover path {
+    fill: #000000;
+}
+
+.in-row:active path {
+    fill: #81b3d2;
 }
 
 .out-row {
     position: relative;
     margin-bottom: 30px;
+}
+
+.out-row:hover path {
+    fill: #000000;
+}
+
+.out-row:active path {
+    fill: #81b3d2;
 }
 
 .in-row label{
@@ -366,15 +385,12 @@ input[type="radio"].visually-hidden {
     margin-right: 21px;
 }
 
-.icon-calendar {
-    content: "";
+.search-form-content svg {
     position: absolute;
-    background-image: url(../img/calendar.svg);
-    background-repeat: no-repeat;
-    width: 24px;
-    height: 24px;
-    right: 4px;
-    top: 8px;
+    width: 23px;
+    height: 23px;
+    right: 7px;
+    top: 7px;
 }
 
 .search-form input[type="text"]{
@@ -403,29 +419,86 @@ input[type="radio"].visually-hidden {
     text-align: center;
     box-sizing: border-box;
 }
+
 .search-form .input-wrapp {
     width: 114px;
     position: relative;
 }
 
-.search-form-minus {
-    width: 24px;
-    height: 20px;
-    background-image: url(../img/minus.png);
-    background-repeat: no-repeat;
+.search-form-minus{
+    display: block;
     position: absolute;
-    top: 8px;
-    left: 15px;
+    left: 0px;
+    top: -10px;
+    width: 36px;
+    height: 38px;
+    border: none;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
 }
 
-.search-form-plus {
-    width: 24px;
-    height: 20px;
-    background-image: url(../img/plus.png);
-    background-repeat: no-repeat;
+.search-form-minus::before {
+    content: "";
+    display: block;
     position: absolute;
-    top: 5px;
-    left: 90px;
+    top: 17px;
+    left: 16px;
+    width: 10px;
+    height: 2px;
+    background-color: #a9a9a9;
+}
+
+.search-form-minus:hover::before{
+    background-color: #000000;
+}
+
+.search-form-minus:active::before{
+    background-color: #81b3d2;
+}
+
+.search-form-plus{
+    display: block;
+    position: absolute;
+    right: 0px;
+    top: -10px;
+    width: 36px;
+    height: 38px;
+    border: none;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+}
+
+.search-form-plus::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 17px;
+    left: 14px;
+    width: 10px;
+    height: 2px;
+    background-color: #a9a9a9;
+    transform: rotate(90deg);
+}
+
+.search-form-plus::after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 17px;
+    left: 14px;
+    width: 10px;
+    height: 2px;
+    background-color: #a9a9a9;
+}
+
+.search-form-plus:hover::before,
+.search-form-plus:hover::after{
+    background-color: #000000;
+}
+
+.search-form-plus:active::before,
+.search-form-plus:active::after{
+    background-color: #81b3d2;
 }
 
 .search-form input[type="submit"] {
@@ -444,7 +517,7 @@ input[type="radio"].visually-hidden {
     background-image: url(../img/map.png);
     background-repeat: no-repeat;
     background-color: #cacaca;
-    min-height: 710px;
+    min-height: 592px;
 }
 
 .hotel-search input[type="submit"]:hover {
@@ -543,7 +616,6 @@ footer {
 }
 
 .developer-text a{
-
 }
 
 .developer-text svg{
@@ -568,7 +640,7 @@ footer {
 .infrastructure {
     display: flex;
     flex-direction: column;
-    margin-bottom: 53px;
+    min-height: 160px;
 }
 .infrastructure-housetype-price,
 .infrastructure-housetype-price {
@@ -577,6 +649,17 @@ footer {
     line-height: 21px;
     margin-bottom: 28px;
 }
+
+.infrastructure label {
+    margin-bottom: 25px;
+    position: relative;
+
+    display: block;
+
+    cursor: pointer;
+    user-select: none;
+}
+
 
 input[type="checkbox"] {
     display: none;
@@ -590,22 +673,35 @@ input[type="checkbox"] + label {
 }
 
 input[type="checkbox"] + label::before {
-    content: '';
-    background-image: url(../img/checkbox-on.svg);
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 25px;
+    content: "";
     position: absolute;
-    top: 0;
-    left: 0;
+    left: 0px;
+    top: 0px;
+    width: 23px;
+    height: 23px;
+    background-image: url(../img/checkbox-off.svg);
+    background-repeat: no-repeat;
 }
 
+input[type="checkbox"]:checked + label::after {
+    content: "";
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    background-image: url(../img/checkbox-on.svg);
+    background-repeat: no-repeat;
+}
 
 .type-of-house {
     display: flex;
     flex-direction: column;
-    margin-bottom: 53px;
     margin-left: 119px;
+}
+
+.type-of-house label {
+    margin-bottom: 25px;
 }
 
 .filter-range {
@@ -727,7 +823,7 @@ input[type="checkbox"] + label::before {
     display: flex;
     justify-content:  space-around;
     align-items: center;
-    min-height: 215px;
+    height: 215px;
     padding-left:  72px;
     padding-right: 72px;
     background-image: url(../img/inner-form-img.jpg);
@@ -752,6 +848,8 @@ input[type="checkbox"] + label::before {
 .chose-housing h2 {
     color: #ffffff;
     font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 25px;
 }
 
 .white-span {
@@ -797,11 +895,11 @@ input[type="checkbox"] + label::before {
     padding-right: 8px;
 }
 
-.arrows:hover path {
+.arrow-up:hover path {
     fill: #000000;
 }
 
-.arrows:active path {
+.arrow-up:active path {
     fill: #81b3d2;
 }
 
@@ -827,6 +925,11 @@ input[type="checkbox"] + label::before {
     display: inline-block;
     margin: 0;
     padding-bottom: 5px;
+}
+
+.hotel-description a:first-child {
+    margin: 0;
+    padding: 0;
 }
 
 .hotel-description span{
