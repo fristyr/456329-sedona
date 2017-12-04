@@ -105,33 +105,41 @@
                 <a href="#" class="search-hotel-button">Поиск гостиницы в седоне</a>
             </div>
         </section>
-
             <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
+            <div class="search-form-content">
             <div class="in-row">
               <label for="date-in">Дата заезда:</label>
-              <input type="text" id="date-in" value="24 апреля 2016">
+              <input type="text" id="date-in" value="24 апреля 2017">
               <span class="icon-calendar"></span>
             </div>
             <div class="out-row">
               <label for="date-out">Дата выезда:</label>
-              <input type="text" id="date-out" value="4 июля 2016">
+              <input type="text" id="date-out" value="4 июля 2017">
               <span class="icon-calendar"></span>
             </div>
             <div class="adults">
               <label for="adults">Взрослые:</label>
               <span class="icon-minus"></span>
-              <input type="text" value="1" id="adults">
+              <span class="input-wrapp">
+                  <a class="search-form-minus" href="#"></a>
+                  <input type="text" value="2" id="adults">
+                  <a class="search-form-plus" href="#"></a>
+              </span>
               <span class="icon-plus"></span>
             </div>
             <div class="kids">
               <label for="kids">Дети:</label>
               <span class="icon-minus"></span>
-              <input type="text" value="0" id="kids">
+              <span class="input-wrapp">
+                  <a class="search-form-minus" href="#"></a>
+                  <input type="text" value="0" id="kids">
+                  <a class="search-form-plus" href="#"></a>
+              </span>
               <span class="icon-plus"></span>
             </div>
             <input class="button-index-form" type="submit" value="Найти">
+        </div>
           </form>
-
         <div class="map">
         </div>
         </main>
