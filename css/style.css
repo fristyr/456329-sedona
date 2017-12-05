@@ -108,6 +108,12 @@ input[type="radio"].visually-hidden {
     text-align: right;
 }
 
+.site-navigation a.active,
+.site-navigation a.active:hover,
+.site-navigation a.active:active {
+    color: #766357;
+}
+
 .main-navigation a,
 .site-navigation a {
     color: #000000;
@@ -358,11 +364,11 @@ input[type="radio"].visually-hidden {
     margin-bottom: 30px;
 }
 
-.out-row:hover path {
+.calendar-icon:hover path {
     fill: #000000;
 }
 
-.out-row:active path {
+.calendar-icon:active path {
     fill: #81b3d2;
 }
 
@@ -566,6 +572,8 @@ footer {
     position: relative;
     background-color: rgba(255, 255, 255, 0.9);
     min-height: 120px;
+    padding: 36px 0;
+    align-items: center;
 }
 
 .footer-index {
@@ -577,7 +585,7 @@ footer {
 }
 
 .social-links-list {
-    padding-top: 25px;
+    margin: 0;
     padding-left: 125px;
     padding-right: 125px;
 }
@@ -585,7 +593,6 @@ footer {
 .visitsedona-footer-link {
     min-width: 400px;
     text-align: center;
-    padding-top: 50px;
 }
 
 .visitsedona-footer-link a {
@@ -647,7 +654,6 @@ footer {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    padding-top: 2px;
 }
 
 .developer-text {
@@ -904,9 +910,7 @@ footer {
 .chose-housing input {
     font-family: "PT Sans", "Arial", sans-serif;
     color: #ffffff;
-    padding-left: 5px;
     font-size: 14px;
-    font-weight: 21px;
 }
 
 .chose-housing h2 {
