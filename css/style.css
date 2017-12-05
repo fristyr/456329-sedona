@@ -353,14 +353,6 @@ input[type="radio"].visually-hidden {
     margin-bottom: 30px;
 }
 
-.calendar-icon:hover path {
-    fill: #000000;
-}
-
-.calendar-icon:active path {
-    fill: #81b3d2;
-}
-
 .out-row {
     position: relative;
     margin-bottom: 30px;
@@ -670,8 +662,8 @@ footer {
 }
 
 .developer-text svg {
-    min-width: 115px;
-    min-height: 40px;
+    width: 115px;
+    height: 40px;
 }
 
 .developer-text:hover path,
@@ -934,19 +926,24 @@ footer {
     display: flex;
     -webkit-box-align: center;
     -ms-flex-align: center;
-    align-items: center;
     background-color: #fff;
     min-height: 87px;
     font-size: 12px;
+    padding-top: 32px;
 }
 
 .find-results h2 {
     font-size: 21px;
     margin-left: 72px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .sort-text-style {
+    height: 20px;
+    margin-top: 0;
     margin-left: 48px;
+
 }
 
 .find-results li {
@@ -957,14 +954,17 @@ footer {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    margin-top: 20px;
     padding-left: 25px;
     padding-right: 25px;
+    margin-top: 0;
+    margin-bottom: 0;
 }
 
 .arrows {
     margin-left: auto;
     margin-right: 73px;
-    margin-top: 5px;
+    margin-top: 0;
 }
 
 .arrow-up {
