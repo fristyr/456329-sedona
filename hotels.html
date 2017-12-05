@@ -29,31 +29,31 @@
         <form action="https://echo.htmlacademy.ru" method="get" class="chose-housing">
             <div class="infrastructure">
                 <h2 class="infrastructure-housetype-price">Инфраструктура:</h2>
-                    <input type="checkbox" name="swim" value="swim" checked>
-                    <label>
+                    <input class="filter-checkbox" type="checkbox" name="swim" value="swim" id="swim-pool" checked>
+                    <label for="swim-pool">
                         <span>Бассейн</span>
                     </label>
-                    <input type="checkbox" name="parking" value="parking" >
-                    <label>
+                    <input class="filter-checkbox" type="checkbox" name="parking" value="parking" id="parking" >
+                    <label for="parking">
                         <span>Парковка</span>
                     </label>
-                    <input type="checkbox" name="wi-fi" value="wifi" checked>
-                    <label>
+                    <input class="filter-checkbox" type="checkbox" name="wi-fi" value="wifi" id="wireless" checked>
+                    <label for="wireless">
                         <span>Wi-FI</span>
                     </label>
             </div>
             <div class="type-of-house">
                 <h2 class="infrastructure-housetype-price">Тип Жилья:</h2>
-                <input type="checkbox" name="hotel" value="hotel" checked>
-                    <label>
+                <input class="filter-checkbox" type="checkbox" name="hotel" value="hotel" id="hotel" checked>
+                    <label for="hotel">
                         <span>Гостиница</span>
                     </label>
-                    <input type="checkbox" name="motel" value="motel" checked>
-                    <label>
+                    <input class="filter-checkbox" type="checkbox" name="motel" value="motel" id="motel" checked>
+                    <label for="motel">
                         <span>Мотель</span>
                     </label>
-                    <input type="checkbox" name="apartments" value="appartments" checked>
-                    <label>
+                    <input class="filter-checkbox" type="checkbox" name="apartments" value="appartments" id="appartments" checked>
+                    <label for="appartments">
                         <span>Апартаменты</span>
                     </label>
             </div>
@@ -98,7 +98,7 @@
         <article class="hotels">
                 <img src="img/img-hotel-1.jpg" alt="img1">
             <div class="hotel-description">
-                <h2 class="hotel-name"><a>Amara Resort &amp; Spa</a></h2>
+                <h2 class="hotel-name"><a href="#">Amara Resort &amp; Spa</a></h2>
                 <span>Гостиница</span>
                 <span>От 4000 Р.</span>
                 <a href="#" class="more-info">подробнее</a>
@@ -114,7 +114,7 @@
         <article class="hotels">
                 <img src="img/img-hotel-2.jpg" alt="img2">
             <div class="hotel-description">
-                <h2 class="hotel-name"><a>Desert quail inn</a></h2>
+                <h2 class="hotel-name"><a href="#">Desert quail inn</a></h2>
                 <span>Мотель</span>
                 <span>От 3000 Р.</span>
                 <a href="#" class="more-info">подробнее</a>
@@ -130,7 +130,7 @@
         <article class="hotels last-result">
                 <img src="img/img-hotel-3.jpg" alt="img3">
             <div class="hotel-description">
-                <h2 class="hotel-name"><a>Villas at poco diablo</a></h2>
+                <h2 class="hotel-name"><a href="#">Villas at poco diablo</a></h2>
                 <span>Апартаменты</span>
                 <span>От 2000 Р.</span>
                 <a href="#" class="more-info">подробнее</a>
