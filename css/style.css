@@ -557,6 +557,12 @@ input[type="radio"].visually-hidden {
     min-height: 592px;
 }
 
+.iframe-index {
+    border: none;
+    width: 1200px;
+    height: 592px;
+}
+
 .hotel-search input[type="submit"]:hover {
     background-color: #669ec0;
     color: #ffffff;
