@@ -553,7 +553,6 @@ input[type="radio"].visually-hidden {
 }
 
 .map {
-    
     background-color: #cacaca;
     min-height: 592px;
 }
@@ -577,11 +576,13 @@ footer {
     background-color: rgba(255, 255, 255, 0.9);
     min-height: 120px;
     padding: 36px 0;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .footer-index {
-    margin-top: -120px;
+    margin-top: -129px;
 }
 
 .social-links-list li {
