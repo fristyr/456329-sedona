@@ -3,6 +3,6 @@ var popup = document.querySelector(".modal-search");
 
 popup.classList.add("modal-off");
 link.addEventListener("click", function (evt) {
-evt.preventDefault();
-popup.classList.toggle("modal-off");
+    evt.preventDefault();
+    popup.classList.toggle("modal-off");
 });
